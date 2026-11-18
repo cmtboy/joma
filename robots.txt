@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cmtboy.github.io/joma/sitemap.xml

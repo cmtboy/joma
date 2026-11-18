@@ -1,0 +1,26 @@
+:root{--g1:#0b3d2e;--g2:#0e7a52;--bg:#f4f7f5;--ink:#101814;--mut:#55645c;--card:#fff;--line:#d5dfda}
+@media (prefers-color-scheme:dark){:root{--bg:#0c1210;--ink:#e3ebe6;--mut:#9db0a6;--card:#141c18;--line:#2b3a32}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Bengali",sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--g2)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:56px 0 64px;text-align:center}
+header.hero img.logo{width:96px;height:96px;border-radius:28px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+header.hero h1{font-size:40px;margin:18px 0 6px;letter-spacing:-.5px}
+header.hero p{margin:0 auto;max-width:520px;opacity:.9;font-size:18px}
+.btn{display:inline-block;margin-top:24px;background:#fff;color:var(--g1);font-weight:700;padding:13px 24px;border-radius:14px;text-decoration:none}
+section{padding:40px 0}
+h2{font-size:24px;margin:0 0 16px;letter-spacing:-.2px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.card h3{margin:0 0 4px;font-size:17px}.card p{margin:0;color:var(--mut)}
+ol.steps{padding-left:0;list-style:none;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:14px;margin:0 0 14px}
+ol.steps li:before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--g2);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.shots{display:flex;gap:14px;overflow-x:auto;padding-bottom:8px}
+.shots img{height:420px;width:auto;border-radius:16px;border:1px solid var(--line);flex:none}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mut);font-size:14px}
+footer a{margin-right:16px}
+.prose{padding:36px 0}.prose h1{font-size:30px;margin:0 0 4px}.prose h2{font-size:20px;margin:30px 0 8px}
+.prose p,.prose li{color:var(--ink)}.prose .muted{color:var(--mut)}
+.topbar{padding:16px 0;border-bottom:1px solid var(--line)}.topbar a{font-weight:700;text-decoration:none}
